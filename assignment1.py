@@ -1,7 +1,7 @@
 """
 Name: Thomas Reaston
 Date started: 30/03/2021
-GitHub URL: cp1404-students/?????? <----- Fix this
+GitHub URL: https://github.com/ThomasReaston/ThomasReastonA1
 """
 
 FILE_NAME = "books.csv"
@@ -39,12 +39,12 @@ def list_books(input_file):
         read_or_unread = parts[3]
         if read_or_unread == "c":
             read_or_unread = "r"
-            print("[{:2}]  {}  {:28} by {:22} ({}) ".format(line_count, read_or_unread, book_name_data, author_data,
-                                                           number_of_pages_data))
+            print("[{:2}]  {}  {:28} by {:22} ({}) pages".format(line_count, read_or_unread, book_name_data, author_data,
+                                                                 number_of_pages_data))
         else:
             read_or_unread = "c"
-            print("[{:2}]  {}  {:28} by {:22} ({}) ".format(line_count, read_or_unread, book_name_data, author_data,
-                                                           number_of_pages_data))
+            print("[{:2}]  {}  {:28} by {:22} ({}) pages".format(line_count, read_or_unread, book_name_data, author_data,
+                                                                 number_of_pages_data))
 
         book_data.append(parts)
 
